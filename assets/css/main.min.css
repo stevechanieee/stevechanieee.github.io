@@ -4186,7 +4186,7 @@ body {
 }
 
 .image-wrap:after {
-	position: absolute;
+	/*position: absolute;
 	bottom: -1px;
 	left: 8%;
 	display: block;
@@ -4194,7 +4194,7 @@ body {
 	height: 0;
 	border: 20px solid transparent;
 	border-bottom-color: #fff;
-	content: " "
+	content: " "*/
 }
 
 @media only screen and (min-width:37.5em) {
