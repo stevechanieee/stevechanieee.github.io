@@ -131,32 +131,372 @@
 				<br/><br/>
 				For the involved experiment, explorations were conducted regarding a particular class of Convolutional Neural Networks (CNNs), namely Deep Convolutional Generative Adversarial Network (DCGANs), to solve not only certain convex optimization problems, but also to leverage the same mechanism for tuning its own hyperparameters. This gives rise to other interesting technical challenges. For example, Particle Swarm Optimization (PSO) is an approach for hyperparameter reduction/tuning, but the algorithmic challenge of implementing a PSO on a DCGAN centers upon the conversion of continuous or discontinuous hyperparameters to discrete values, which may result in premature stagnation of particles at local optima. The involved implementation mechanics, such as increasing the inertial weighting (so as to assist in mitigating the stagnation issue), may spawn yet other convex optimization problems. The involved experiments capitalized upon the feed-forward structure of a “You Only Look Once” (YOLO)-based DCGAN. Specifically, a squeezed Deep Convolutional-YOLO-Generative Adversarial Network (DC-YOLO-GAN), referred to as a Modified Squeezed YOLO v3 Implementation (MSY3I), combined with convex relaxation adversarial training, was utilized to improve the bound tightening for each successive neural network layer and better facilitate the global optimization, via a specific numerical stability implementation within the MSY3I.</p>
 				
-				
-				<h2>2020</h2>
-				<h3>Auto-tuning of an Artificial Intelligence (AI)-centric Steady State Genetic Algorithm (SSGA) Compression Factor on a Modified Numerical Computing Platform</h3>
-				<p><small><i>Excerpt from my publication:</i> <a href="http://www.thinkmind.org/index.php?view=article&articleid=cyber_2020_2_60_80061" target="_blank">[Mitigation Factors for Multi-domain Resilient Networked Distributed Tessellation Communications]</a>, which received a Best Paper Award.</small>
-				<br/><br/>
-				Simulations run atop a Modified GNU Octave (M-GNU-O) platform have indicated that statistical consistency tests are not reliable for discerning an optimal filter (which still necessitates parameter tuning). Rather, the tests yield an infinite set of consistent filters within which the optimal filter is a unique member. Preliminary experimental results indicate promise for the auto-tuning of the Steady State Genetic Algorithm (SSGA) compression factor ζ for more optimal convergence of an optimally tuned filter (or a set of near optimally tuned filters). Indeed, auto-tuning is central to this capability, and the compression factor ζ is instrumental in dictating the rate of the steady state towards convergence. Large ζ values may be indicative of earlier (i.e., premature) convergence, thereby segueing to specious solutions that have keyed in on local minima and/or noise, thereby precluding a more optimal convergence. Accordingly, one observation centers around the fact that the ability to re-tune the compression factor ζ to a lower value (i.e., <1) seems to be critical. Another observation centers around the Principal Tuning Result (PTR) for an exponentially bounded fitness, given the characteristic time λ for an overall time dependent population fitness F, which satisfies the convergence condition where PTR = [F_(t+1)-F_t ] < F_t(e^(- λt)-1). In essence, the PTR allows for an SSGA optimization estimate for the convergent approach of the time dependent population fitness F in a quasi-analytical fashion prior to a given numerical iteration, and this finding seems to be consistent with other research in the field.</p>
-				
-				
-				<h2>2019</h2>
-				<h3>Stochastic Gradient Descent (SGD) Algorithm for Ascertaining Apropos Weights in the Fast Training of Support Vector Machines</h3>
-				<p><small><i>Excerpt from my publication:</i> <a href="http://www.thinkmind.org/index.php?view=article&articleid=cyber_2019_4_30_88010" target="_blank">[Fast Training of Support Vector Machine for Forest Fire Prediction]</a></small>
-				<br/><br/>
-				The Support Vector Machine (SVM) is a binary classification model, which aims to find the optimal separating hyperplane with the maximum margin so as to classify the data. The maximum margin SVM is obtained by solving a convex Quadratic Programming Problem (QPP) and is termed the hard-margin linear SVM, whose training process is often time-consuming. Several decomposition methods have been experimented with, which split the problem into a sequence of smaller sub-problems. The Sequential Minimal Optimization (SMO) algorithm is a widely utilized decomposition method for SVM. The SMO decomposition method can lead to faster training, whereby the problem is decomposed more quickly into sub-problems. SMO avoids the resolving of numerical Quadratic Programming (QP) problems and takes the alternative pathway of solving the smallest optimization problem at each iteration (by repeatedly selecting a subset of the free variables and optimizing over these variables). Another method for solving optimization problems, which has also been widely utilized for machine learning is that of the Stochastic Gradient Descent (SGD), which is an iterative method. A SGD algorithm was utilized on the discussed experimental testbed to ascertain apropos weights (w_0, w) by iteratively updating the values of w_0 and w, via the utilization of the value of gradient V. The value of the gradient V depends upon the inputs (S), the current values of the model parameter (λ,η,σ), and the cost function f; η is the learning rate, which determines the size of the steps to reach a minimum, λ is the regularization parameter to reduces overfitting, and σ is standard deviation of sigma with loss function l (y ̂(x|Θ,y) that measures the cost of prediction ŷ when the actual answer is y.</p>
-				
-				
-				<h2>2018</h2>
-				<h3>Bi-Normal Separation (BNS) and a Modified Association Matrix (MAM) for an Accelerated Inference Engine</h3>
-				<p><small><i>Excerpt from my publication:</i> <a href="https://www.thinkmind.org/index.php?view=article&articleid=cyber_2018_3_10_88019" target="_blank">[Countering an Anti-Natural Language Processing Mechanism in the Computer-Mediated Communication of “Trusted” Cyberspace Operations: Bi-Normal Separation Feature Scaling for Informing a Modified Association Matrix]</a></small>
-				<br/><br/>
-				A prototypical Deep Learning Engine (Training Engine and Inference Engine) with the specified exemplar layers for the discussed Training Engine experiment are as follows: N-Grams (NG) (i.e. recurrent word combinations), Part-of-Speech (POS) N-Grams (POSNG) (i.e. recurrent POS combinations), words with semantic characteristics of relationships (using values from WordNet), Positive and Negative Values (PNV) of words (using values from the Macquarie Semantic Orientation Lexicon [MSOL] ), Pleasantness Value (PV) of words (using values from Whissel’s Dictionary of Affect in Language (WDAL), and Affective words Demonstrating Subjectivity (ADS). These same exemplar layers are utilized for both the Forward Propagation “Rough-Tuning” for the Training Model and well as the Continuous Back Propagation “Fine-Tuning” for the Pre-Trained Model. Bi-Normal Separation (BNS) and a Modified Association Matrix (MAM) were leveraged as accelerants for the inference engine. When combined with specifically chosen datasets to assist in the pre-training, the Transfer Learning was enhanced. By way of explanation, the Untrained Model eventually becomes a “Rough-Tuned” Trained Model (upon ingestion of the initial Training Dataset and Forward Propagation). Further “Rough Tuning” can be achieved by training specific layers, such as PNV and PV (e.g. via MSOL and WDAL, respectively).  Eventually, the Trained Model becomes a Pre-Trained Model, and “Fine-Tuning” can be achieved by Continuous Back Propagation and optimizing at certain training layers, such as PNV (e.g., via the Yelp Restaurant Sentiment Lexicon [YRSL] and Amazon Laptop Sentiment Lexicon [ALSL]) and PV (e.g., via the Canadian National Research Council (NRC) Hashtag Emotion Lexicon [HEL] and NRC Word-Emotion Association Lexicon [WEAL]). The Pre-Trained Model is then further optimized when a new dataset is ingested. To avoid over-fitting, the Pre-Trained Model of the CNN also served as a feature extractor for which the features can be fed into a Support Vector Machine (SVM). Collectively, the described constituent components comprised an experimental framework for an enhanced inference system.</p>
-				
-				
-				<h2>2017</h2>
-				<h3>Higher Tolerance for Uncertainty amidst Compressed Decision Cycles on an Stacked Generative Adversarial Network (SGAN)</h3>
-				<p><small><i>Excerpt from my publication:</i> <a href="http://www.thinkmind.org/index.php?view=article&articleid=cyber_2018_2_10_88012" target="_blank">[Prototype Orchestration Framework as a High Exposure Dimension Cyber Defense Accelerant Amidst Ever-Increasing Cycles of Adaptation by Attackers: A Modified Deep Belief Network Accelerated by a Stacked Generative Adversarial Network for Enhanced Event Correlation]</a>, which received a Best Paper Award.</small>
-				<br/><br/>The prototype orchestration framework involved a modified Stacked Generative Adversarial Network (SGAN) for Uncompressed Decision Cycles (UDC) and a modified Deep Belief Network (DBN) for Compressed Decision Cycles (CDC). A particular focus was given to the Artificial Intelligence (AI) accelerant methodology utilized to compress the involved decision-making cycles. Data was ingested by two disparate pathways: (1) UDC, and (2) CDC. For UDC, the data was passed along for Deep Learning (DL) as well as a paradigm of “higher ambiguity and lower uncertainty” (HALU) (i.e. more data is desired). In contrast, for CDC, data was passed along to a DBN as well as a paradigm of “lower ambiguity and higher uncertainty” (LAHU) module. For the UDC pathway, DL and HALU passed their votes to a modified N-Input Voting Algorithm  (NIVA) 1 module, whose output was then passed along to a Voting Algorithm for Fault Tolerant Systems  (VAFTs) variant for further processing prior to a decision being reached. For the CDC pathway, DBN and LAHU passed their votes down a fast track pathway that had its own NIVA 2 module, an additional “Lower Ambiguity Accelerant (LAA),” and a resultant decision output. In essence, the prototype orchestration framework was predicated upon the hybridization of a modified DBN conjoined with a particular cognitive computing precept (the acceptance of higher uncertainty amidst lower ambiguity for CDC); for UDC, it utilized a modified SGAN, which served as a feeder to an LAA. 
+				<table>
+    <tr>
+        <td>4IR</td>
+        <td>Industry 4.0</td>
+    </tr>
+    <tr>
+        <td>AC</td>
+        <td>AIS-Centric</td>
+    </tr>
+    <tr>
+        <td>AI</td>
+        <td>Artificial Intelligence</td>
+    </tr>
+    <tr>
+        <td>AIS </td>
+        <td>Artificial Intelligence System</td>
+    </tr>
+    <tr>
+        <td>APD</td>
+        <td>Angle Penalized Distance</td>
+    </tr>
+    <tr>
+        <td>b-SHAP</td>
+        <td>bespoke Shapley Additive exPlanations</td>
+    </tr>
+    <tr>
+        <td>BSD</td>
+        <td>Berkeley Software Distribution</td>
+    </tr>
+    <tr>
+        <td>BTW</td>
+        <td>Bak-Tang-Wiesenfeld</td>
+    </tr>
+    <tr>
+        <td>CF</td>
+        <td>Constriction Factor</td>
+    </tr>
+    <tr>
+        <td>COPRAS</td>
+        <td>Complex Proportional Assessment</td>
+    </tr>
+    <tr>
+        <td>CPRLD</td>
+        <td>CF-PSO-RCR-LSTM-DCNN</td>
+    </tr>
+    <tr>
+        <td>CWT</td>
+        <td>Continuous Wavelet Transform</td>
+    </tr>
+    <tr>
+        <td>DAWS</td>
+        <td>Dynamic Assessment and Weighting System</td>
+    </tr>
+    <tr>
+        <td>DCNN </td>
+        <td>Deep Convolutional Neural Network</td>
+    </tr>
+    <tr>
+        <td>DE</td>
+        <td>Decision Engineering</td>
+    </tr>
+    <tr>
+        <td>DeepLIFT</td>
+        <td>Deep Learning Important FeaTures</td>
+    </tr>
+    <tr>
+        <td>DKC</td>
+        <td>Domain Knowledge Communication</td>
+    </tr>
+    <tr>
+        <td>DL</td>
+        <td>Deep Learning</td>
+    </tr>
+    <tr>
+        <td>DM</td>
+        <td>Decision-Making</td>
+    </tr>
+    <tr>
+        <td>DNN</td>
+        <td>Deep Learning Neural Network</td>
+    </tr>
+    <tr>
+        <td>DT</td>
+        <td>Decision Tree</td>
+    </tr>
+    <tr>
+        <td>Dtreevoz</td>
+        <td>Decision Tree Visualization</td>
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>Execution Time</td>
+    </tr>
+    <tr>
+        <td>ELECTRE</td>
+        <td>ELimination and Choice Translating reality</td>
+    </tr>
+    <tr>
+        <td>FCSO</td>
+        <td>Finite-Change Shapley-Owen</td>
+    </tr>
+    <tr>
+        <td>FLORAL</td>
+        <td>Fit Log-Ratio Lasso</td>
+    </tr>
+    <tr>
+        <td>GDPR</td>
+        <td>General Data Protection Regulation</td>
+    </tr>
+    <tr>
+        <td>GPL</td>
+        <td>General Public License</td>
+    </tr>
+    <tr>
+        <td>Grad-CAM</td>
+        <td>Gradient-weighted Class Activation Mapping</td>
+    </tr>
+    <tr>
+        <td>GSO</td>
+        <td>Generic Shapley-Owen</td>
+    </tr>
+    <tr>
+        <td>HDD</td>
+        <td>High Dimensional Data</td>
+    </tr>
+    <tr>
+        <td>HDL</td>
+        <td>HONs-DAWS-LAHU</td>
+    </tr>
+    <tr>
+        <td>HON</td>
+        <td>Higher-Order Network</td>
+    </tr>
+    <tr>
+        <td>HypI</td>
+        <td>Hypervolume Improvement</td>
+    </tr>
+    <tr>
+        <td>I</td>
+        <td>Interpretability</td>
+    </tr>
+    <tr>
+        <td>I&amp;E</td>
+        <td>Interpretability &amp; Explainability</td>
+    </tr>
+    <tr>
+        <td>ICT</td>
+        <td>Information and Communication Technology</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Interdependencies</td>
+    </tr>
+    <tr>
+        <td>IGD</td>
+        <td>Inverted Generational Distance</td>
+    </tr>
+    <tr>
+        <td>IMC</td>
+        <td>Interpretability &amp; Explainability Model-Centric</td>
+    </tr>
+    <tr>
+        <td>IPBI</td>
+        <td>Inverted PBI</td>
+    </tr>
+    <tr>
+        <td>KANs</td>
+        <td>Komogorov-Arnold Networks</td>
+    </tr>
+    <tr>
+        <td>LAHU</td>
+        <td>Lower Ambiguity Higher Uncertainty</td>
+    </tr>
+    <tr>
+        <td>LASSO</td>
+        <td>Least Absolute Shrinkage and Selection Operator</td>
+    </tr>
+    <tr>
+        <td>LCM</td>
+        <td>Large Concept Model</td>
+    </tr>
+    <tr>
+        <td>LIME</td>
+        <td>Local Interpretable MA Explanations</td>
+    </tr>
+    <tr>
+        <td>LLM</td>
+        <td>Large Language Models</td>
+    </tr>
+    <tr>
+        <td>LRP</td>
+        <td>Layer-wise Relevance Propagation</td>
+    </tr>
+    <tr>
+        <td>LSTM</td>
+        <td>Long Short-Term Memory</td>
+    </tr>
+    <tr>
+        <td>LVGP</td>
+        <td>Latent Variable Gaussian Process</td>
+    </tr>
+    <tr>
+        <td>LVM</td>
+        <td>Latent Variable Model</td>
+    </tr>
+    <tr>
+        <td>MA</td>
+        <td>Model Agnostic</td>
+    </tr>
+    <tr>
+        <td>MADM</td>
+        <td>Multi-Attribute Decision-Making</td>
+    </tr>
+    <tr>
+        <td>MaOP</td>
+        <td>Many-Objective Optimization Problem</td>
+    </tr>
+    <tr>
+        <td>MC</td>
+        <td>Method-Centric</td>
+    </tr>
+    <tr>
+        <td>ML</td>
+        <td>Machine Learning</td>
+    </tr>
+    <tr>
+        <td>MODM</td>
+        <td>Multi-Objective Decision-Making</td>
+    </tr>
+    <tr>
+        <td>MOOP</td>
+        <td>Multi-Objective Optimization Problem</td>
+    </tr>
+    <tr>
+        <td>MPE</td>
+        <td>Multi-Partner Enclave</td>
+    </tr>
+    <tr>
+        <td>MS</td>
+        <td>Model Specific</td>
+    </tr>
+    <tr>
+        <td>NIDS</td>
+        <td>Negative Influence Dominating Set</td>
+    </tr>
+    <tr>
+        <td>NN</td>
+        <td>Neural Network</td>
+    </tr>
+    <tr>
+        <td>NP-hard</td>
+        <td>Non-deterministic Polynomial-tie Hardness</td>
+    </tr>
+    <tr>
+        <td>OM</td>
+        <td>Objective Measure</td>
+    </tr>
+    <tr>
+        <td>OS</td>
+        <td>Occlusion Sensitivity</td>
+    </tr>
+    <tr>
+        <td>PBI</td>
+        <td>Penalty Boundary Intersection</td>
+    </tr>
+    <tr>
+        <td>PIDS</td>
+        <td>Positive Influence Dominating Set</td>
+    </tr>
+    <tr>
+        <td>PROMETHEE</td>
+        <td>Preference Ranking Organization METHod for Enrichment of Evaluations</td>
+    </tr>
+    <tr>
+        <td>PSO</td>
+        <td>Particle Swarm Optimization</td>
+    </tr>
+    <tr>
+        <td>QA/QC </td>
+        <td>Quality Assurance/Quality Control</td>
+    </tr>
+    <tr>
+        <td>RCR</td>
+        <td>Robust Convex Relaxation</td>
+    </tr>
+    <tr>
+        <td>ROYB</td>
+        <td>Red-Orange-Yellow-Green</td>
+    </tr>
+    <tr>
+        <td>RR</td>
+        <td>Rank Reversal</td>
+    </tr>
+    <tr>
+        <td>RWS</td>
+        <td>Real-World Scenario</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>Sensitivity</td>
+    </tr>
+    <tr>
+        <td>SA</td>
+        <td>Sensitivity Analysis</td>
+    </tr>
+    <tr>
+        <td>SCSO</td>
+        <td>Squared Cohort Shapley-Owen</td>
+    </tr>
+    <tr>
+        <td>SEL</td>
+        <td>Stacking Ensemble Learner</td>
+    </tr>
+    <tr>
+        <td>SHAP</td>
+        <td>Shapley Additive exPlanations</td>
+    </tr>
+    <tr>
+        <td>SM</td>
+        <td>Subjective Measure</td>
+    </tr>
+    <tr>
+        <td>SoS</td>
+        <td>Systems of Systems</td>
+    </tr>
+    <tr>
+        <td>STEA</td>
+        <td>System Transparency, Explainability, and Accountability (STEA)</td>
+    </tr>
+    <tr>
+        <td>STKGC</td>
+        <td>Spatio-Temporal Knowledge Graph Completion </td>
+    </tr>
+    <tr>
+        <td>TOPSIS</td>
+        <td>Technique for Order of Preference by Similarity to Ideal Solution</td>
+    </tr>
+    <tr>
+        <td>U</td>
+        <td>Uncertainties</td>
+    </tr>
+    <tr>
+        <td>U</td>
+        <td>Uncertainty</td>
+    </tr>
+    <tr>
+        <td>V</td>
+        <td>Validity</td>
+    </tr>
+    <tr>
+        <td>VBSO</td>
+        <td>Variance-Based Shapley-Owen</td>
+    </tr>
+    <tr>
+        <td>VIKOR</td>
+        <td>VlseKriterijumska Optimizacija I Kompromisno Resenje</td>
+    </tr>
+    <tr>
+        <td>VSNO</td>
+        <td>Very Small/Non-Obvious</td>
+    </tr>
+    <tr>
+        <td>WPO</td>
+        <td>Weighted Power</td>
+    </tr>
+</table>
 			</div>
 		</div>
 		
