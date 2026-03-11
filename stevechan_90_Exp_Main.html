@@ -140,7 +140,66 @@
 				<h3>Experimentation with AD & AG</h3>
 				<p><small><i>(as referenced in Section IIIC. Experimentation)</small></i></p>
 				<p>&nbsp;</p>
-				<p style="text-align:justify">&nbsp;&nbsp;&nbsp;As noted in the prior section, AD (the “D” side) and AG (the “G” side) were treated concurrently in a minimax/adversarial fashion. Issues emerged early on during the preliminary experimentation. The issue of False Positives (FPs)/False Negatives (FNs) became prevalent for AD amidst CE, and the issue of AI hallucinations and non sequitur/spurious results emerged for AG amidst CE. Constraints were implemented for PE, and the ensuing experimental progression is delineated in the Section III Experimentation results section. The utilized experimentation PE variants for AD and AG are available at the links <a href="stevechan_90_Exp_AD.html" style="color:#3399cc;">Experimentation Prompts for Anomaly Detection (AD)</a> and <a href="stevechan_90_Exp_AG.html" style="color:#3399cc;">Experimentation Prompts for Anomaly Generation (AG)</a>, respectively. The associated experimental results are shown in Fig. 7 within the paper. In essence, for AD on the D side, as can be seen in Fig. 7 within the paper, AD #15, #10, #13, #9, and #14 exhibited the highest efficacy; this alluded to the notion that Facets #9, #10, #6, #11, and #5, among others of Table 1 within the paper, better facilitated matters. For a more granular understanding of AD #15, a number of variants were devised(AD #17 - #25), which are available at the link <a href="stevechan_90_Exp_AD_Der.html" style="color:#3399cc;">Derivative Experimentation Prompts for AD</a>, were also tested. The results are shown in Figure 8 within the paper. In essence, for these AD #15 Derivatives on the D side, as can be seen in Fig. 8 within the paper, AD #23, #17, #20, #19, and #24 exhibited the highest efficacy. This seemed to reaffirm the import of Facets #9, #10, #6, and #11; of note, #5 did not necessarily seem to impact matters (likely due to a paucity of trusted well provenanced materials with the varied Multi-Agent vantage points), and this will be treated separately in future work. However, three items of import did emerge as being pivotal for achieving the higher efficacy: (1) strategic repetition of key instructions, (2) prepended (and sometimes postpended) strict instructives, (3) utilizing the aforementioned to handle the issues of FPs/FNs and uncertainty, and (4) more optimized (e.g., clear and concise, reduced tokens) instruction set. As should be axiomatic, there is a seeming contradiction in the set of (1)+(2)+(3) and (4). For the former, re-articulation via re-affirmation (more tokens) seems to be central while for the latter, conciseness/clarity along with compactness (less tokens) seem to be at play. For the observed highest efficacy AD #15, #10, #13, #9, and #14, the tokens ranged from 299 to 477 (with AD #15 at 477). Delving into this further, for the AD #15 Derivatives of AD #23, #17, #20, #19, and #24, the tokens ranged from 197 to 278 (with AD #23 at 197 having the highest efficacy for the experimentation herein). The scripts for AD #15 and AD #23 are available at the links <a href="stevechan_90_Exp_AD_Code.html" style="color:#3399cc;">Experimentation Scripts for AD #15</a> and <a href="stevechan_90_Exp_AD_Der_Code.html" style="color:#3399cc;">Experimentation Scripts for AD #23</a>, respectively.</p>
+				<p style="text-align:justify">&nbsp;&nbsp;&nbsp;As noted in the prior section, AD (the “D” side) and AG (the “G” side) were treated concurrently in a minimax/adversarial fashion. Issues emerged early on during the preliminary experimentation. The issue of False Positives (FPs)/False Negatives (FNs) became prevalent for AD amidst CE, and the issue of AI hallucinations and non sequitur/spurious results emerged for AG amidst CE. Constraints were implemented for PE, and the ensuing experimental progression is delineated in the Section III Experimentation results section. The utilized experimentation PE variants for AD and AG are available at the links <a href="stevechan_90_Exp_AD.html" style="color:#3399cc;">Experimentation Prompts for Anomaly Detection (AD)</a> and <a href="stevechan_90_Exp_AG.html" style="color:#3399cc;">Experimentation Prompts for Anomaly Generation (AG)</a>, respectively. The associated experimental results are shown in Fig. 7 within the paper.</p>
+				<p>&nbsp;</p>
+				<p style="text-align:justify">&nbsp;&nbsp;&nbsp;First, for AD on the D side, as can be seen in Fig. 7 within the paper, AD #15, #10, #13, #9, and #14 exhibited the highest efficacy; this alluded to the notion that Facets #9, #10, #6, #11, and #5, among others of Table 1 within the paper, better facilitated matters. The facets and thematics of the referenced table are provided below.</p>
+				
+<table border="0" cellpadding="0" cellspacing="0" width="380" style="text-align:center">
+  <thead>
+    <tr height="21" style="height: 16pt;">
+      <th>Facet</th>
+      <th>Thematic</th>
+    </tr>
+  </thead><colgroup><col width="87" style="width: 65pt;"><col width="293" style="width: 220pt;"></colgroup>
+  <tbody>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">1</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Visual Attention Cues (when detecting anomalies and precise localization is needed)</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">2</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Chain-of-Thought (CoT) Prompting/Structured Visual Reasoning</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">3</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Knowledge Grounding (with verified knowledge)</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">4</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Major Features and Candidates</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">5</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Multi-Agent</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">6</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Multi-Pass/Multi-Path (when confronted with ambiguous and complex visual reasoning)</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">7</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Stage-Based Prompt</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">8</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Strategic Repetition (when detecting small and subtle anomalies)</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">9</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Triangulated Evidence</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">10</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Uncertain Detection Re-affirmation</td>
+    </tr>
+    <tr height="21" style="height: 16pt;">
+      <td height="21" class="xl65" style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap; height: 16pt;">11</td>
+      <td style="padding-top: 1px; padding-right: 1px; padding-left: 1px; font-size: 10pt; vertical-align: bottom; border: medium; white-space: nowrap;text-align:left;">Visual-Attention</td>
+    </tr>
+  </tbody>
+</table>
+				
+				<p style="text-align:justify">For a more granular understanding of AD #15, a number of variants (AD #17 - #25), which are available at the link <a href="stevechan_90_Exp_AD_Der.html" style="color:#3399cc;">Derivative Experimentation Prompts for AD</a>, were devised and tested. The results are shown in Figure 8 within the paper. In essence, for these AD #15 Derivatives on the D side, as can be seen in Fig. 8 within the paper, AD #23, #17, #20, #19, and #24 exhibited the highest efficacy. This seemed to reaffirm the import of Facets #9, #10, #6, and #11; of note, for the experimentation pertaining to this paper, #5 did not necessarily seem to impact matters (likely due to a paucity of trusted, well provenanced materials with the varied Multi-Agent vantage points for the CE stage), and this will be treated separately in future work. However, three items of import did emerge as being pertinent for achieving the higher efficacy: (1) strategic repetition of key instructions, (2) prepended (and/or sometimes postpended) strict instructives, (3) utilizing the aforementioned to handle the issues of FPs/FNs and uncertainty, and (4) more optimized (e.g., clear and concise, reduced tokens) instruction set. As should be axiomatic, there is a seeming contradiction in the set of (1)+(2)+(3) and (4). For the former, re-articulation via re-affirmation (more tokens) seems to be central while for the latter, conciseness/clarity along with compactness (less tokens) seems to be at play. For the observed highest efficacy AD #15, #10, #13, #9, and #14, the tokens ranged from 299 to 477 (with AD #15 at 477  tokens). Delving into this further, for the AD #15 Derivatives of AD #23, #17, #20, #19, and #24, the tokens ranged from 197 to 278 (with AD #23 at 197 tokens having the highest efficacy for the experimentation herein). The finding for AD #23 at 197 tokens seems to be consistent with the notion that prompts exceeding the 150-200 tokens range often do not enhance matter and may even be counterproductive (e.g., by reducing clarity and introducing prospective conflicting priorities). However, the 197 tokens is somewhat higher then the typical effective token ranges of 50-120 tokens for technical inspection/anomaly analysis and 80-150 tokens for highly structured anomaly analysis. The scripts for AD #15 and AD #23 are available at the links <a href="stevechan_90_Exp_AD_Code.html" style="color:#3399cc;">Experimentation Scripts for AD #15</a> and <a href="stevechan_90_Exp_AD_Der_Code.html" style="color:#3399cc;">Experimentation Scripts for AD #23</a>, respectively.</p>
 				<p>&nbsp;</p>
 				
     			<!-- In brief: -->
