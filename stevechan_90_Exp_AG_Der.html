@@ -126,7 +126,7 @@
 
 			<div id="index" class="image-wrap">
 				<h1>Derivative Experimentation Prompts for Anomaly Generation (AG)</h1>
-				<p style="text-align:justify;">Due to the 6-8 page limitation for the current work-in-progress IEEE paper, please find the various "Experimentation Prompts for Anomaly Generation (AG)" below (rather than in the paper). They are numbered AG #18 through AG #27. </p>
+				<p style="text-align:justify;">So that reviewers and readers can reproduce the results for this IEEE paper, please find the various "Derivative Experimentation Prompts for Anomaly Generation (AG)" below (rather than in the paper). They are numbered AG #18 through AG #23. </p>
 				
 				
 				<!-- AG #18: Improved High-Fidelity Edit Prompt -->
@@ -150,10 +150,10 @@
 <p >The anomaly must be visible only upon close inspection and must not alter surrounding textures or scene composition.</p>
 <p>&nbsp;</p>
 <p >Strict constraints:</p>
-<p >- do not add or remove objects</p>
-<p >- do not move or resize objects</p>
-<p >- do not modify textures or materials outside the edit region</p>
-<p >- do not change lighting, shadows, reflections, or perspective</p>
+<p >- Do not add or remove objects.</p>
+<p >- Do not move or resize objects.</p>
+<p >- Do not modify textures or materials outside the edit region.</p>
+<p >- Do not change lighting, shadows, reflections, or perspective.</p>
 <p>&nbsp;</p>
 <p>If any unintended scene changes occur, revert them and reduce the anomaly size further.</p>
 				
@@ -188,7 +188,7 @@
     			<!-- AG #20: Ultra-Stable Minimal Prompt (High Reliability) -->
     			<h3>AG #20</h3>
 				<p><small><i>(as referenced in Section IIIC. Experimentation)</small></i>
-				<p style="text-align:justify;">Prospective Value-added Proposition: Front-loaded constraints in an Hierarchical Instruction Ordering fashion: Explicit Editing Framing, Scene Lock, and Copy-Edit Framing; Postpended Strategic Repetition</p>
+				<p style="text-align:justify;">Prospective Value-added Proposition: Front-loaded constraints in a Hierarchical Instruction Ordering fashion: Explicit Editing Framing, Scene Lock, and Copy-Edit Framing; Postpended Strategic Repetition</p>
 				<br/>
 				
 <p  >This is an image editing task. Use the input image as the fixed reference scene.</p>
@@ -211,7 +211,7 @@
     			<!-- AG #21: Industrial Three-Layer Prompt Structure -->
     			<h3>AG #21</h3>
 				<p><small><i>(as referenced in Section IIIC. Experimentation)</small></i>
-				<p style="text-align:justify;">Prospective Value-added Proposition: Multi-Step/Multi-Layered;Front-loaded constraints in an Hierarchical Instruction Ordering fashion; Validation/Self-Correction</p>
+				<p style="text-align:justify;">Prospective Value-added Proposition: Multi-Step/Multi-Layered; Front-loaded constraints in a Hierarchical Instruction Ordering fashion; Validation/Self-Correction</p>
 				<br/>
 				
 <p  ><strong>Layer 1 &mdash; Task &amp; Scene Layer</strong><br />This is an image editing task. Use the input image as the fixed reference scene. Reproduce the scene exactly, preserving all objects, textures, materials, lighting, shadows, and camera perspective. Do not change geometry, move objects, or alter the scene outside the edit.</p>
@@ -230,7 +230,7 @@
 
 <p  >This is an image editing task. Use the input as the fixed reference scene. Preserve all objects, textures, lighting, shadows, and perspective.</p>
 <p>&nbsp;</p>
-<p  >Copy the image and apply only one very small localized modification. Limit edits to a tiny region on an existing wire or connector (&le;1&ndash;2% of image).</p>
+<p  >Copy the image and apply only one very small localized modification. Limit edits to a tiny region on an existing wire or connector (&le;1&ndash;2% of the image).</p>
 <p>&nbsp;</p>
 <p>Inside this region, insert exactly one subtle early-stage wiring anomaly (minor insulation abrasion, single exposed strand, small insulation crack, faint overheating discoloration, or slight connector looseness). Pixels outside must remain unchanged. Revert any unintended changes.</p>
 
@@ -247,11 +247,11 @@
 <p  >Layer 2 &mdash; Edit Method (Micro-Edit)<br />Copy the image and apply only one very small localized modification. Define a tiny edit region on an existing wire or connector (&le;1&ndash;2% of the total image). Pixels outside this region must remain unchanged.</p>
 <p>&nbsp;</p>
 <p  >Layer 3 &mdash; Edit Content (Anomaly Definition)<br />Inside the edit region, insert exactly one subtle early-stage wiring anomaly. Randomly select from:</p>
-<p  >- minor insulation abrasion</p>
-<p  >- single exposed conductor strand</p>
-<p  >- small insulation crack</p>
-<p  >- faint overheating discoloration</p>
-<p  >- slight connector looseness</p>
+<p  >- Minor insulation abrasion.</p>
+<p  >- Single exposed conductor strand.</p>
+<p  >- Small insulation crack.</p>
+<p  >- Faint overheating discoloration.</p>
+<p  >- Slight connector looseness</p>
 <p>&nbsp;</p>
 <p  >Randomize the position within the selected wire or connector segment. The anomaly must appear natural and only noticeable upon close inspection. Revert any unintended changes outside the edit region.</p>
 <p>&nbsp;</p>

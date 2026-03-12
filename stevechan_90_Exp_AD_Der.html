@@ -126,7 +126,7 @@
 
 			<div id="index" class="image-wrap">
 				<h1>Derivative Experimentation Prompts for Anomaly Detection (AD)</h1>
-				<p style="text-align:justify;">Due to the 6-8 page limitation for the current work-in-progress IEEE paper, please find the various "Derivative Experimentation Prompts for Anomaly Detection (AD)" prompts below (rather than in the paper). They are numbered AD #17 through AD #25.</p>
+				<p style="text-align:justify;">So that reviewers and readers can reproduce the results for this IEEE paper, please find the various "Derivative Experimentation Prompts for Anomaly Detection (AD)" prompts below (rather than in the paper). They are numbered AD #17 through AD #25.</p>
 				
 				
 				<!-- AD #17 (Derivative of AD #15): Optimized Prompt (less tokens, same or higher effectiveness) -->
@@ -136,7 +136,7 @@
 				<br/>
 				<p>Task:<br/>Analyze the uploaded image and produce a simplified annotated version showing all detected objects, anomalies, and structural layouts.</p>
 				<p>&nbsp;</p>
-				<p>Instructions:<br/>Reason step-by-step using <i style="color:#9933cc;">multiple independent reasoning paths (self-consistency)</i>. Explicitly identify <i style="color:#9966ff;">false positives and negatives</i>, provide examples, assess likelihood and impact, note assumptions/<i style="color:#9966ff;">uncertainties</i>, and summarize conclusions from the most consistent reasoning.</p>
+				<p>Instructions:<br/>Reason step-by-step using <i style="color:#9933cc;">multiple independent reasoning paths (self-consistency)</i>. Explicitly identify <i style="color:#9966ff;">false positives and false negatives</i>, provide examples, assess likelihood and impact, note assumptions/<i style="color:#9966ff;">uncertainties</i>, and summarize conclusions from the most consistent reasoning.</p>
 				<p>&nbsp;</p>
 				<p style="color:#9933cc;"><i>Visual Grid:<br/>Divide the image into a logical grid (e.g., 3x3 or 4x4). For each region: detect shapes/objects, classify contextually, identify anomalies. Reconcile duplicates across regions.</i></p>
 				<p>&nbsp;</p>
@@ -148,7 +148,7 @@
 				<p>&nbsp;</p>
 				<p>Image Overlay:<br/>Preserve essential layout, remove minor details, overlay objects with bright outlines, highlight anomalies in red, keep base image visible.</p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated image with overlays<br/>2. Object table: category, location, confidence, anomaly<br/><i style="color:#9966ff;">3. False positives</i><br/><i style="color:#9966ff;">4. False negatives</i><br/>5. Assumptions/<i style="color:#9966ff;">uncertainties</i><br/>6. Final synthesis</p>
+				<p>Output:<br/>1. Annotated image with overlays.<br/>2. Object table: category, location, confidence, anomaly.<br/><i style="color:#9966ff;">3. False positives.</i><br/><i style="color:#9966ff;">4. False negatives.</i><br/>5. Assumptions/<i style="color:#9966ff;">uncertainties.</i><br/>6. Final synthesis.</p>
 				<p>&nbsp;</p>
 
     			<!-- AD #18 (Derivative of AD #15): Ultra-Compact, High-Effectiveness Prompt (~145 tokens) -->
@@ -168,7 +168,7 @@
 				<p>&nbsp;</p>
 				<p>Verify: All regions, FP/FN, anomalies, cross-region consistency.</p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated image<br/>2. Object table<br/><i style="color:#9966ff;">3. False positives</i><br/><i style="color:#9966ff;">4. False negatives</i><br/>5. Assumptions/<i style="color:#9966ff;">uncertainties</i><br/>6. Final synthesis</p>
+				<p>Output:<br/>1. Annotated image.<br/>2. Object table.<br/><i style="color:#9966ff;">3. False positives.</i><br/><i style="color:#9966ff;">4. False negatives.</i><br/>5. Assumptions/<i style="color:#9966ff;">uncertainties.</i><br/>6. Final synthesis.</p>
 				<p>&nbsp;</p>
     
     			<!-- AD #19 (Derivative of AD #15): Focused Prompt (Triangulated Evidence, Uncertainty, Multi-Pass, Visual Attention) -->
@@ -186,7 +186,7 @@
 				<p>&nbsp;</p>
 				<p style="color:#9933cc;"><i>Agents:<br/>A: Visual detection, B: Engineering/structural, C: Context, D: Dataset verification, E: Anomaly/risk.</i></p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated image<br/>2. Object table (category, location, confidence, anomaly)<br/>3. Uncertain/ambiguous detections<br/><i style="color:#9966ff;">4. False positives</i><br/><i style="color:#9966ff;">5. False negatives</i><br/>6. Assumptions/<i style="color:#9966ff;">uncertainties</i><br/>7. Final synthesis</p>
+				<p>Output:<br/>1. Annotated image.<br/>2. Object table (category, location, confidence, anomaly).<br/>3. Uncertain/ambiguous detections.<br/><i style="color:#9966ff;">4. False positives.</i><br/><i style="color:#9966ff;">5. False negatives.</i><br/>6. Assumptions/<i style="color:#9966ff;">uncertainties.</i><br/>7. Final synthesis.</p>
                 <p>&nbsp;</p>
                  
     			<!-- AD #20 (Derivative of AD #15): Ultra-Compact, Triangulated & Uncertainty-Focused Prompt (~95 tokens) -->
@@ -238,7 +238,7 @@
 				<p>&nbsp;</p>
 				<p>Quality Check: Identify potential <i style="color:#9966ff;">false positives and false negatives</i>. Note assumptions and <i style="color:#9966ff;">uncertainties.</i></p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated simplified image<br/>2. Object table (category, location, confidence, anomaly)<br/>3. Uncertain detections<br/><i style="color:#9966ff;">4. False positives</i><br/><i style="color:#9966ff;">5. False negatives</i><br/>6. Assumptions<br/>7. Final synthesis based on the most consistent evidence.</p>
+				<p>Output:<br/>1. Annotated simplified image.<br/>2. Object table (category, location, confidence, anomaly).<br/>3. Uncertain detections.<br/><i style="color:#9966ff;">4. False positives.</i><br/><i style="color:#9966ff;">5. False negatives.</i><br/>6. Assumptions.<br/>7. Final synthesis based on the most consistent evidence.</p>
 				<p>&nbsp;</p>
 				
 				<!-- AD #24 (Derivative of AD #15): Stage 1 — Observation Pass (Low-Inference Visual Scan) & Stage 2 — Interpretation & Validation Pass -->
@@ -266,7 +266,7 @@
 				<p>&nbsp;</p>
 				<p>Generate a simplified annotated image highlighting objects and anomalies. </p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated image<br/>2. Object table (category, location, confidence, anomaly)<br/>3. Uncertain detections<br/>4. False positives<br/>5. False negatives<br/>6. Assumptions/uncertainties<br/>7. Final synthesis.</p>
+				<p>Output:<br/>1. Annotated image.<br/>2. Object table (category, location, confidence, anomaly).<br/>3. Uncertain detections.<br/>4. False positives.<br/>5. False negatives.<br/>6. Assumptions/uncertainties.<br/>7. Final synthesis.</p>
 				<p>&nbsp;</p>
 				<p>--------------------------------------------------</p>
 				<p><i style="color:#9933cc;">Re-check detections with Medium/Low confidence and attempt to confirm or reject them using contextual and spatial reasoning.</i></p>
@@ -289,7 +289,7 @@
 				<p>Step 2: Interpretation &amp; Classification </p>
 				<p>- Cross-check the observations against known patterns or datasets to classify detected objects and structures. </p>
 				<p>- For each observation, assign a confidence rating (High=3/3, Medium=2/3, Low=1/3). </p>
-				<p>- Evaluate possible <i style="color:#9966ff;">false positives/negatives</i>, ambiguous detections, and spatial relationships between objects. </p>
+				<p>- Evaluate possible <i style="color:#9966ff;">false positives/false negatives</i>, ambiguous detections, and spatial relationships between objects. </p>
 				<p>&nbsp;</p>
 				<p>Output: </p>
 				<p>- Annotated Image: Highlight objects, anomalies, and <i style="color:#9966ff;">uncertainties</i>. </p>
@@ -303,9 +303,9 @@
 				<p>- Provide a final synthesis of findings, including any remaining <i style="color:#9966ff;">uncertainties</i> or unresolved issues. </p>
 				<p>&nbsp;</p>
 				<p>Output: </p>
-				<p>- Updated Object Table (with refined confidence and anomalies) </p>
-				<p>- Final Annotated Image </p>
-				<p>- Summary of <i style="color:#9966ff;">Uncertainties</i>/Remaining Questions</p>
+				<p>- Updated Object Table (with refined confidence and anomalies).</p>
+				<p>- Final Annotated Image.</p>
+				<p>- Summary of <i style="color:#9966ff;">Uncertainties</i>/Remaining Questions.</p>
   				<p>&nbsp;</p>
   			</div>
 		</div>

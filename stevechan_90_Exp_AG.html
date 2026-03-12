@@ -126,7 +126,7 @@
 
 			<div id="index" class="image-wrap">
 				<h1>Experimentation Prompts for Anomaly Generation (AG)</h1>
-				<p style="text-align:justify;">Due to the 6-8 page limitation for the current work-in-progress IEEE paper, please find the various "Experimentation Prompts for Anomaly Generation (AG)" below (rather than in the paper). They are numbered AG #1 through AG #17.</p>
+				<p style="text-align:justify;">So that reviewers and readers can reproduce the results for this IEEE paper, please find the various "Experimentation Prompts for Anomaly Generation (AG)" below (rather than in the paper). They are numbered AG #1 through AG #17.</p>
 				
 				
 				<!-- AG #1: Base Prompt -->
@@ -243,12 +243,12 @@
 				<p>&nbsp;</p>
 				<p>Introduce exactly one localized power-engineering wiring anomaly consistent with realistic electrical infrastructure faults (e.g., minor insulation abrasion, a single exposed conductor strand, small connector looseness, or slight overheating discoloration).</p>
 				<p>&nbsp;</p>
-				<p>- Constraints:</p>
+				<p>Constraints:</p>
 				<p>- Only one anomaly may be present.</p>
 				<p>- The anomaly must affect only a small portion of a single wire or connector.</p>
 				<p>- The anomaly must occupy less than 2% of the image area.</p>
 				<p>- No objects may be added, removed, or repositioned.</p>
-				<p>Background, lighting, perspective, and scene geometry must remain unchanged.</p>
+				<p>- Background, lighting, perspective, and scene geometry must remain unchanged.</p>
 				<p>&nbsp;</p>
 				<p>Edit scope restriction:</p>
 				<p>At least 98–99% of the image pixels must remain unchanged.</p>
@@ -262,7 +262,7 @@
 				<p>Negative instruction:</p>
 				<p>Do not generate: broken cables, large exposed wires, sparks, smoke, severe burns, or dramatic damage.</p>
 				<p>&nbsp;</p>
-				<p>Output:<br/>1. Annotated simplified image<br/>2. Object table (category, location, confidence, anomaly)<br/>3. Uncertain detections<br/>4. False positives<br/>5. False negatives<br/>6. Assumptions<br/>7. Final synthesis based on the most consistent evidence.</p>
+				<p>Output:<br/>1. Annotated simplified image.<br/>2. Object table (category, location, confidence, anomaly).<br/>3. Uncertain detections.<br/>4. False positives.<br/>5. False negatives.<br/>6. Assumptions.<br/>7. Final synthesis based on the most consistent evidence.</p>
 				<p>&nbsp;</p>
 				
 				<!-- AG #8: Two-Stage Prompt Method (Scene Lock + Micro-Edit) -->
@@ -401,7 +401,7 @@
 				<p>Texture preservation rule:</p>
 				<p>All surface textures, materials, and patterns must remain identical to the original image.</p>
 				<p>&nbsp;</p>
-				<p>Structural preservation rule:</p>
+				<p>Structural preservation again:</p>
 				<p>Object shapes, sizes, and positions must not change. The geometry and shape of all objects must remain identical to the reference image. Do not change:</p>
 				<p>- wire thickness</p>
 				<p>- cable curvature</p>
